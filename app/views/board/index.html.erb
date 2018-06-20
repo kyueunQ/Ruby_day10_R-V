@@ -1,0 +1,7 @@
+<div>
+    <% @posts.each do |post| %>
+    <a href="/board/<%=post.id %>"><%= post.title %></a>
+    
+    <% end %>
+    <%= link_to "새글쓰기", "/board/new" %>
+</div>

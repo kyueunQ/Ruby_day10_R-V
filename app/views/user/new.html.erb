@@ -1,0 +1,7 @@
+<h1>회원가입</h1>
+<%= form_tag("/users") do %>
+    ID: <%= text_field_tag(:user_name) %> <br/>
+    PW: <%= password_field_tag(:password) %>
+    <%= submit_tag("가입") %>
+<% end %>
+ 

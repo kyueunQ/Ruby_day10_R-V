@@ -1,0 +1,6 @@
+<div>
+<h2><%=@user.user_name%></h2>
+<hr/>
+<p><%= @user.ip_address %></p>
+<%= link_to "수정", "/user/#{@user.id}/edit" %>
+</div>
