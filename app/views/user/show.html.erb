@@ -4,3 +4,7 @@
 <p><%= @user.ip_address %></p>
 <%= link_to "수정", "/user/#{@user.id}/edit" %>
 </div>
+<p>이 유저가 작성한 글</p>
+<% @user.posts.each do |post| %>
+    <%= link_to post.title, "/board/#{post.id}" %> <br>
+<% end %>
