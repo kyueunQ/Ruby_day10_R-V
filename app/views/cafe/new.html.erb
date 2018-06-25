@@ -1,0 +1,6 @@
+<h2>카페 생성하기</h2>
+<%= form_tag("/caves") do %>
+Title : <%=text_field_tag(:title) %> <br><br>
+설명: <%=text_area_tag(:description) %>
+<%= submit_tag "생성" %>
+<% end %>

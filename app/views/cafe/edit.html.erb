@@ -1,0 +1,5 @@
+<%= form_tag("/cafe/#{@cafe.id}", method: "patch") do %>
+<%=text_field_tag(:title, @cafe.title) %> <br> <br>
+<%=text_area_tag(:description, @cafe.description) %>
+<%= submit_tag("수정") %>
+<%end%>

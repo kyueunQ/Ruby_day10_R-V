@@ -1,0 +1,14 @@
+<% unless user_signed_in? %>
+    <%= link_to "로그인", "/sign_in" %>
+<% else %>
+    <p>로그인 유저: <%= @current_user.user_name %></p>
+    <%= link_to "로그아웃", "/logout" %>
+<% end %>
+
+<div>
+<ul>    
+    <% @caves.each do |cafe| %>
+    <li><%= link_to cafe.title, "/cafe/#{cafe.id}" %></li>
+    <% end %>
+</ul>
+</div>
